@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,400;1,600&family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panal {
+    background-position: center;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.75s ease-in;
+
+}
+
+.panal h3 {
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.panal.active {
+    flex: 5;
+}
+
+.panal.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
